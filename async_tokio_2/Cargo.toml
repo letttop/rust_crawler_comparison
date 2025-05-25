@@ -1,0 +1,14 @@
+[package]
+name = "async_tokio_2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest = "*"
+tokio = { version = "*", features = ["full"] }
+url = "*"
+tokio-native-tls = "*"
+native-tls = "*"
+
+[profile.release]
+debug = true
